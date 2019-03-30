@@ -4,7 +4,7 @@
   "description": "My first Fullstack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon insex.js"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/MisterKelyfos/FullstackFirst/issues"
   },
-  "homepage": "https://github.com/MisterKelyfos/FullstackFirst#readme"
+  "homepage": "https://github.com/MisterKelyfos/FullstackFirst#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "knex": "^0.16.3",
+    "nodemon": "^1.18.10",
+    "sqlite3": "^4.0.6"
+  }
 }
