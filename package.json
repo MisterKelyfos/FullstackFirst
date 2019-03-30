@@ -4,7 +4,7 @@
   "description": "My first Fullstack",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon indes.js"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
