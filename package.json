@@ -1,0 +1,20 @@
+{
+  "name": "fullstackfirst",
+  "version": "1.0.0",
+  "description": "My first Fullstack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MisterKelyfos/FullstackFirst.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MisterKelyfos/FullstackFirst/issues"
+  },
+  "homepage": "https://github.com/MisterKelyfos/FullstackFirst#readme"
+}
