@@ -1,13 +1,34 @@
 const faker = require('faker');
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('table_name').truncate()
+  return knex('kennels').truncate()
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+      return knex('kennels').insert([
+        {
+          "name": faker.name.findName(),
+          "bio": faker.lorem.paragraph(),
+          "location": faker.address.state() ,
+          "email": faker.internet.email(),
+          "phone": faker.phone.phoneNumberFormat(),
+          "img_url": faker.image.city(),
+        },
+        {          
+          "name": faker.name.findName(),
+          "bio": faker.lorem.paragraph(),
+          "location": faker.address.state() ,
+          "email": faker.internet.email(),
+          "phone": faker.phone.phoneNumberFormat(),
+          "img_url": faker.image.city(),
+      },
+        {
+          "name": faker.name.findName(),
+          "bio": faker.lorem.paragraph(),
+          "location": faker.address.state() ,
+          "email": faker.internet.email(),
+          "phone": faker.phone.phoneNumberFormat(),
+          "img_url": faker.image.city(),
+        }
       ]);
     });
 };
